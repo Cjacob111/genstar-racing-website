@@ -1,4 +1,4 @@
-# GENSTAR RACING · Change YOUR_GITHUB_USERNAME and repository name before using /admin.
+# GENSTAR RACING · repo: Cjacob111/genstar-racing-website
 # The editor only works after you connect GitHub authentication in Netlify.
 backend:
   name: github
