@@ -1,0 +1,21 @@
+
+.genstar-feed{margin:25px auto 34px;max-width:1160px}
+.genstar-feed-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:#103b32;color:#fff;border-radius:15px;padding:18px 21px;margin-bottom:20px}
+.genstar-feed-toolbar strong{font-size:1.2rem;display:block;font-family:Georgia,serif}
+.genstar-feed-sub{font-size:.85rem;color:#e7dcc3;display:block;margin-top:4px}
+.genstar-filter-label{display:flex;align-items:center;gap:9px;font-size:.9rem}
+.genstar-filter-label select{padding:10px 12px;border-radius:8px;border:1px solid #b8b9ab;background:white;color:#16392f;font:inherit;max-width:210px}
+.genstar-feed-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px}
+.genstar-update{background:#fff;border:1px solid #dedfd7;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px #00000010;color:#20372f}
+.genstar-update-info{padding:22px}
+.genstar-update-meta{color:#6d745f;font-size:.78rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase}
+.genstar-update h3{font-family:Georgia,serif;font-size:1.5rem;line-height:1.2;color:#16392f;margin:9px 0 12px}
+.genstar-update p{white-space:pre-line;line-height:1.65;overflow-wrap:anywhere;margin:0}
+.genstar-update-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:4px;background:#e9ece4}
+.genstar-update-gallery img{width:100%;height:230px;object-fit:cover;display:block;cursor:zoom-in}
+.genstar-update-video{width:100%;display:block;aspect-ratio:16/9;background:#101f19;border:0}
+.genstar-update-video-link{display:block;padding:10px 20px;color:#1b5344}
+.genstar-feed-empty{padding:28px;background:#f5f2e9;border:1px solid #d9d5ca;border-radius:12px;grid-column:1/-1}
+.genstar-image-dialog{position:fixed;inset:0;background:#000d;display:flex;align-items:center;justify-content:center;z-index:999999;padding:30px;cursor:zoom-out}
+.genstar-image-dialog img{max-height:93vh;max-width:95vw;object-fit:contain}
+@media(max-width:600px){.genstar-feed-toolbar{padding:16px}.genstar-update-gallery img{height:190px}}

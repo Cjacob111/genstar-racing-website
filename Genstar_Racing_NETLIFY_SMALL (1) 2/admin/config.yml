@@ -1,0 +1,58 @@
+# GENSTAR RACING · Change YOUR_GITHUB_USERNAME and repository name before using /admin.
+# The editor only works after you connect GitHub authentication in Netlify.
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/genstar-racing-website
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: media/uploads
+public_folder: /media/uploads
+publish: true
+
+collections:
+  - name: stable
+    label: Stable Updates
+    files:
+      - name: horse_updates
+        label: Post & Manage Horse Updates
+        file: content/horse-updates.json
+        format: json
+        fields:
+          - label: Horse Updates
+            name: posts
+            widget: list
+            allow_add: true
+            collapsed: true
+            summary: '{{fields.date}} · {{fields.horse}} · {{fields.title}}'
+            fields:
+              - { label: Headline, name: title, widget: string, required: true }
+              - label: Horse
+                name: horse
+                widget: select
+                options: ["Honor's Miracle", "Rocco's Return", "Dr. Philippon", "Redeemed", "Peace Be WithYou", "All horses"]
+              - label: Update date
+                name: date
+                widget: datetime
+                format: YYYY-MM-DD
+                time_format: false
+                date_format: YYYY-MM-DD
+              - label: Update type
+                name: category
+                widget: select
+                options: [Training, Barn life, Race result, Qualifying, Stable news]
+                default: Training
+              - { label: 'What happened?', name: body, widget: text, required: true }
+              - label: Photos (click + to add as many as you want)
+                name: photos
+                widget: list
+                required: false
+                field: { label: Photo, name: image, widget: image }
+              - { label: 'YouTube or Vimeo link (recommended for longer videos)', name: video_url, widget: string, required: false }
+              - { label: 'Upload short video (MP4/WebM, small files only)', name: video_file, widget: file, required: false }
+              - label: Status
+                name: status
+                widget: select
+                options: [published, draft]
+                default: published
