@@ -7,7 +7,7 @@ backend:
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
-media_folder: media/uploads
+media_folder: "Genstar_Racing_NETLIFY_SMALL (1) 2/media/uploads"
 public_folder: /media/uploads
 publish: true
 
