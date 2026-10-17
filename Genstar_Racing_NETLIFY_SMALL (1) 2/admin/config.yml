@@ -2,7 +2,7 @@
 # The editor only works after you connect GitHub authentication in Netlify.
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/genstar-racing-website
+  repo: Cjacob111/genstar-racing-website
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
