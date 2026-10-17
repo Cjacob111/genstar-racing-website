@@ -17,7 +17,7 @@ collections:
     files:
       - name: horse_updates
         label: Post & Manage Horse Updates
-        file: content/horse-updates.json
+        file: "Genstar_Racing_NETLIFY_SMALL (1) 2/content/horse-updates.json"
         format: json
         fields:
           - label: Horse Updates
